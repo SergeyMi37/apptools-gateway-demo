@@ -1,3 +1,4 @@
+![](https://github.com/SergeyMi37/apptools-sqlgateway/blob/master/doc/jdbc.png)
 # apptools-sqlgateway
 An example repository using PostgreSQL SQLgateway to demonstrate exporting and importing instances of the %Library.SQLConnection class with copying jdbc drivers.
 This is especially useful when you want to copy items to another iris server through the package manager's private registry while keeping your private settings.
