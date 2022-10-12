@@ -1,0 +1,21 @@
+       ;do $System.OBJ.LoadDir("/opt/irisbuild/src","ck",,1)
+
+    zn "%SYS"
+    Do ##class(Security.Users).UnExpireUserPasswords("*")
+    ;
+    set gty=##class(%SQLConnection).%New()
+    set gty.Name="postgres"
+    set gty.URL="jdbc:postgresql://postgres:5432/"
+    set gty.Usr="postgres"
+    set gty.pwd="postgres"
+    set gty.classpath="/opt/irisbuild/jdbc/postgresql-42.3.1.jar"
+    set gty.driver="org.postgresql.Driver"
+    set gty.isJDBC=1
+    set sc=gty.%Save()
+    ZWRITE gty,sc
+    zpm "install zapm"
+    zapm "newdb apptools-admin"
+    zn "user"
+    zpm "install webterminal"
+    halt
+
