@@ -1,8 +1,8 @@
-# db-postgres-using-SQLgateway #  
+# apptools-sqlgateway
 An example repository using PostgreSQL SQLgateway to demonstrate exporting and importing instances of the %Library.SQLConnection class with copying jdbc drivers.
 This is especially useful when you want to copy items to another iris server through the package manager's private registry while keeping your private settings.
 
-[![Demo](https://img.shields.io/badge/Demo%20on-Cloud%20Run%20Deploy-F4A460)](https://apptools-gateway.demo.community.intersystems.com/csp/sys/mgr/UtilSqlGateways.csp)
+[![Demo](https://img.shields.io/badge/Demo%20on-Cloud%20Run%20Deploy-F4A460)](https://apptools-sqlgateway.demo.community.intersystems.com/csp/sys/mgr/UtilSqlGateways.csp)
 
 ## Credits ##
 0. OEX package [migration-pg-iris-dataset](https://openexchange.intersystems.com/package/migration-pg-iris-dataset) 
@@ -26,7 +26,7 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 ## Installation 
 Clone/git pull the repo into any local directory
 ```
-git https://github.com/SergeyMi37/db-postgres-using-SQLgateway.git
+git https://github.com/SergeyMi37/apptools-sqlgateway.git
 ```
 1. Build
 ```
