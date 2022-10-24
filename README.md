@@ -1,5 +1,5 @@
 ![](https://github.com/SergeyMi37/apptools-sqlgateway/blob/master/doc/jdbc.png)
-# apptools-sqlgateway
+# apptools-sqlgateway-demo
 An example repository using PostgreSQL SQLgateway to demonstrate exporting and importing instances of the %Library.SQLConnection class with copying jdbc drivers.
 This is especially useful when you want to copy items to another iris server through the package manager's private registry while keeping your private settings.
 
@@ -27,7 +27,7 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 ## Installation 
 Clone/git pull the repo into any local directory
 ```
-git https://github.com/SergeyMi37/apptools-sqlgateway.git
+git https://github.com/SergeyMi37/apptools-sqlgateway-demo.git
 ```
 1. Build
 ```
