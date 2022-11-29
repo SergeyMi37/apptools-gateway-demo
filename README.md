@@ -49,5 +49,20 @@ write ##class(apptools.core.json).ExportClassInstances("%Library.SQLConnection",
 
 Check database connection:
 ```
+%SYS>do $system.SQLGateway.TestConnection("postgres")
 ```
 
+Import zpm application with drivers
+```
+%SYS>zpm "install appmsw-gateway-sql"
+...
+
+See what drivers can be installed:
+```
+%SYS>do ##class(appmsw.gateway.jdbc).ImportSQLConnection("view")
+```
+
+Import drivers to instance:
+```
+%SYS>do ##class(appmsw.gateway.jdbc).ImportSQLConnection()
+```
