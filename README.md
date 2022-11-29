@@ -36,4 +36,18 @@ docker-compose build
 2. Run it in foreground. Sometimes container start is slower than estimated.  
 ```
 docker-compose up
+
+docker-compose exec iris iris session iris
 ```
+
+## How to Test it
+Open IRIS terminal and export the settings to a file:
+```
+zn "%SYS"
+write ##class(apptools.core.json).ExportClassInstances("%Library.SQLConnection","select * FROM %Library.sys_SQLConnection where isJDBC = 1","/tmp/gateways.json")
+```
+
+Check database connection:
+```
+```
+
