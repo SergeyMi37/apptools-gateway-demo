@@ -13,9 +13,20 @@
     set gty.isJDBC=1
     set sc=gty.%Save()
     ZWRITE gty,sc
-    zpm "install zapm"
+    ;zpm "install zapm"
+    ;zapm "newdb apptools-admin"
+    ;zn "user"
+    ;zpm "install webterminal"
+    
+    zpm "load https://github.com/intersystems/ipm.git"
+    zpm "load https://github.com/SergeyMi37/zapm.git"
     zapm "newdb apptools-admin"
-    zn "user"
-    zpm "install webterminal"
+    zn "apptools-admin"
+    zpm "load https://github.com/SergeyMi37/apptools-admin.git"
+    
+    zapm "newdb webterminal"
+    zn "webterminal"
+    zpm "load https://github.com/intersystems-community/webterminal.git"
+    
     halt
 
